@@ -1,0 +1,175 @@
+/* CSS DOCUMENT */
+/* This is the CSS file for the Management System Assignment */
+/* Styling for entire navbar */
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other elements */
+}
+
+.navbar-container {
+    background-color: rgba(34, 34, 34, 0.75); /* 75% transparent */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Ensure the navbar is above the video */
+}
+
+/* Top bar */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.75); /* Adjust transparency for the line */
+}
+
+/* Logo */
+.top-left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Top left */
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left > div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.top-left .fa-location-arrow {
+    margin-right: 5px;
+    color: #ccc;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.top-left span,
+.top-right span,
+.top-right a {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.top-right a:hover {
+    color: #eee;
+}
+
+/* Main navbar */
+.main-nav {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column; /* Menu and search bar */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav li:last-child {
+    margin-right: 0;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(68, 68, 68, 0.75); /* Adjust transparency for hover effect */
+    border-radius: 5px;
+}
+
+/* Search bar */
+.main-nav .search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.main-nav .select-wrapper {
+    position: relative;
+}
+
+.main-nav select {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.main-nav .price-range,
+.main-nav .year-range {
+    display: flex;
+    gap: 5px;
+}
+
+.main-nav input[type="text"] {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.main-nav button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-nav button[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
